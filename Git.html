@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Git</title>
+        <style>
+            .mh3{
+                color:grey;
+                text-align: center;
+            }
+            .mh3:hover{
+                color:goldenrod;
+                transition: 3s;
+            }
+            .mdiv{
+                border: darkcyan 1px solid;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .mb{
+                color: dodgerblue;
+            }
+            .ma{
+                text-decoration: none;
+            }
+            .ma:hover{
+                color: orangered;
+                text-decoration: none;
+                transition: 1s;
+            }
+            table, th, td{
+                border: 2px gray solid;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 class="mh3">Git常用基本指令</h3>
+        <p>
+        <table>
+            <tr>
+                <th>指令</th>
+                <th>說明</th>
+            </tr>
+            <tr>
+                <td>git help 指令名稱</td>
+                <td>查看指令的文件</td>
+            </tr>
+            <tr>
+                <td>git init</td>
+                <td>建立GIT管理機制</td>
+            </tr>
+            <tr>
+                <td>git add</td>
+                <td>加入追蹤<br>
+                    #git add . 可以加入所有此資料夾的檔案</td>
+            </tr>
+            <tr>
+                <td>git status</td>
+                <td>查看上次commit到目前的檔案變更狀態</td>
+            </tr>
+            <tr>
+                <td>git commit -m "msg"</td>
+                <td>建立一次儲存紀錄 必須要輸入資訊</td>
+            </tr>
+            <tr>
+                <td>git checkout "branch1"</td>
+                <td>切換分支<br>
+                    #git checkout -b "branch1" 代表如果沒有該分支則建立並切換<br>
+                    #git checkout master "fileName" 將此檔案改回該分支版本
+                </td>
+            </tr>
+            <tr>
+                <td>git branch "branch1"</td>
+                <td>建立分支<br>
+                    #git branch 察看目前有的分支<br>
+                    #git branch -d "branch1" 刪除分支<br>
+                    如果該分支沒有被merge 需要-D強制刪除
+                </td>
+            </tr>
+            <tr>
+                <td>git merge --no--ff "branch1"</td>
+                <td>
+                    將branch整合進目前分支 可以一次合併多個 Branch<br>
+                    --no-ff代表不要將分支上的commit點合併進來
+                </td>
+            </tr>
+            <tr>
+                <td>git push</td>
+                <td>將目前本機狀態上到遠端主機<br>
+                    #在master時 git push即可<br>
+                    #尚未測試
+                </td>
+            </tr>
+        </table>
+        </p>
+        <p>參考</p>
+        <a href="https://ihower.tw/git/basic.html#sec1">
+            https://ihower.tw/git/basic.html#sec1</a>
+        <br>
+        <a href="https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md">
+            https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md</a>
+
+    </body>
+</html>
+

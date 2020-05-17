@@ -1,0 +1,29 @@
+.mh3{
+    color:grey;
+    text-align: center;
+}
+.mh3:hover{
+    color:goldenrod;
+    transition: 3s;
+}
+.mdiv{
+    border: darkcyan 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+.mb{
+    color: dodgerblue;
+}
+.ma{
+    text-decoration: none;
+}
+.ma:hover{
+    color: orangered;
+    text-decoration: none;
+    transition: 1s;
+}
+table, th, td{
+    border: 2px gray solid;
+    border-collapse: collapse;
+    padding: 8px;
+}
