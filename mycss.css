@@ -27,3 +27,12 @@ table, th, td{
     border-collapse: collapse;
     padding: 8px;
 }
+a{
+    color:mediumslateblue;
+    text-decoration: none;
+}
+a:hover {
+    color: orangered;
+    text-decoration: none;
+    transition: 1s;
+}

@@ -3,25 +3,48 @@
     <head>
         <title>Css</title>
         <style>
-            .mh3{
-                color:grey;
+            .mh3 {
+                color: grey;
+                text-align: center;
             }
-            .mh3:hover{
-                color:goldenrod;
+        
+            .mh3:hover {
+                color: goldenrod;
                 transition: 3s;
             }
-            .mdiv{
+        
+            .mdiv {
                 border: darkcyan 1px solid;
                 border-radius: 5px;
                 padding: 5px;
             }
-            .mb{
+        
+            .mb {
                 color: dodgerblue;
             }
-            .ma{
+        
+            .ma {
                 text-decoration: none;
             }
-            .ma:hover{
+        
+            .ma:hover {
+                color: orangered;
+                text-decoration: none;
+                transition: 1s;
+            }
+        
+            table,
+            th,
+            td {
+                border: 2px gray solid;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+            a{
+                color:mediumslateblue;
+                text-decoration: none;
+            }
+            a:hover {
                 color: orangered;
                 text-decoration: none;
                 transition: 1s;
@@ -29,6 +52,73 @@
         </style>
     </head>
     <body>
+        <h3 class="mh3">CSS</h3>
+        <p>
+            <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank">
+                如何在HTML使用CSS</a><br>
+            <ol>
+                <li>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br></li>
+                <li>寫在HTML &lt;style&gt;標籤內</li>
+            </ol>
+        </p>
+        <hr>
+        <p>
+            <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">
+                Selectors
+            </a>
+            <br>
+            <table>
+                <tr>
+                    <th style="width:20%">Selector</th>
+                    <th style="width:20%">Example</th>
+                    <th>Example description</th>
+                </tr>
+                <tr>
+                    <td>.<i>class</i></td>
+                    <td>.intro</td>
+                    <td>Selects all elements with class=&quot;intro&quot;</td>
+                </tr>
+                <tr>
+                    <td>#<i>id</i></td>
+                    <td>#firstname</td>
+                    <td>Selects the element with id=&quot;firstname&quot;</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>Selects all elements</td>
+                </tr>
+                <tr>
+                    <td><i>element</i></td>
+                    <td>p</td>
+                    <td>Selects all &lt;p&gt; elements</td>
+                </tr>
+                <tr>
+                    <td><i>element,element,..</i></td>
+                    <td>div, p</td>
+                    <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+                </tr>
+            </table>
+        </p>
+        <hr>
+        <p>
+            <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">
+                Box Model
+            </a>
+            <br>
+            <a href="https://3.bp.blogspot.com/-9gjt_LPRGKU/XsCnlCQVPdI/AAAAAAAAD78/8AOYhMdw2pc63TZeIS9EcPCOHpYn3zPGACLcBGAsYHQ/s1600/57.JPG" imageanchor="1" ><img border="0" src="https://3.bp.blogspot.com/-9gjt_LPRGKU/XsCnlCQVPdI/AAAAAAAAD78/8AOYhMdw2pc63TZeIS9EcPCOHpYn3zPGACLcBGAsYHQ/s1600/57.JPG" width="600" data-original-width="1300" data-original-height="523" /></a>
+        </p>
+        <hr>
+        <p>
+            <a href="https://www.w3schools.com/css/css_float.asp" target="_blank">
+                float and clear
+            </a>
+            <br>
+        </p>
+        <hr>
+        <p>參考</p>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+            w3schools https://www.w3schools.com/css/default.asp</a>
 
     </body>
 </html>
